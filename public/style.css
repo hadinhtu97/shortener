@@ -49,3 +49,7 @@ code {
     background-color: #ddd;
     font-size: 20px;
 }
+
+div {
+    margin: 20px 0;
+}
