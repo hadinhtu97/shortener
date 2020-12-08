@@ -23,6 +23,7 @@ let listUrl = [
         short_url: 2
     }
 ];
+
 app.post('/api/shorturl/new', (req, res) => {
     let url = req.body.url;
     let httpRegex = /^https:\/\//;
@@ -49,6 +50,19 @@ app.post('/api/shorturl/new', (req, res) => {
         }
     } else {
         res.json({ error: 'invalid url' });
+    }
+})
+
+app.get('/api/shorturl/:short_url', (req, res) => {
+    let nonNumberRegex = /\D/g;
+    if (nonNumberRegex.test(req.params.short_url)) {
+        res.json({ error: "Wrong format" })
+    } else {
+        if (listUrl.filter(li => li.short_url == req.params.short_url).length == 0) {
+            res.json({ error: "No short URL found for the given input" })
+        } else {
+            res.redirect(listUrl.filter(li => li.short_url == req.params.short_url)[0].original_url)
+        }
     }
 })
 
