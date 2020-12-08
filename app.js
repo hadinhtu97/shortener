@@ -34,7 +34,6 @@ app.post('/api/shorturl/new', (req, res) => {
     } else {
       let regex = /\/\w+/g;
       rest = rest.replace(regex, '');
-      console.log(rest);
       dns.lookup(rest, (err) => {
         if (err) {
           res.json({ error: 'invalid url' });
