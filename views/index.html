@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shortener Microservice</title>
-    <style>
-        body {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
     <h1>Shortener Microservice</h1>
+    <hr>
+    <form action="api/shorturl/new" method="POST">
+        <label for="url">Url to be shorted </label>
+        <input type="text" id="url" name="url" value="https://www.google.com">
+        <input type="submit" value="Short">
+    </form>
+    <div>
+        <a href="api/shorturl/1">[..]/api/shorturl/1</a>
+        <br>
+        <code>
+            https://www.google.com
+        </code>
+    </div>
+
 </body>
 
 </html>

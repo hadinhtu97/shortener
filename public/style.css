@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: #dd4814;
+    margin: 50px 0;
+}
+
+hr {
+    width: 70%;
+    border: 1px solid #5e0080;
+}
+
+form {
+    margin: 50px 0;
+}
+
+label {
+    color: #dd4814;
+    font-size: 20px;
+}
+
+input[type=text] {
+    outline: none;
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    border: 2px solid #5e0080;
+    color: #dd4814;
+}
+
+input[type=submit] {
+    background-color: white;
+    border: 1px solid #dd4814;
+    outline: none;
+    color: #5e0080;
+}
+
+a {
+    text-decoration: none;
+    color: #5e0080;
+    font-size: 20px;
+}
+
+code {
+    background-color: #ddd;
+    font-size: 20px;
+}
