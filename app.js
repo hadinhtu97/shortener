@@ -15,11 +15,11 @@ app.use(express.static(__dirname + "/public"));
 
 let listUrl = [
     {
-        original_url: "https://www.google.com",
+        original_url: "https://www.freecodecamp.org",
         short_url: 1
     },
     {
-        original_url: "https://www.freecodecamp.com",
+        original_url: "https://www.google.com",
         short_url: 2
     }
 ];
