@@ -1,4 +1,3 @@
-require("dotenv").config();
 const express = require("express");
 const cors = require('cors');
 const bodyParser = require("body-parser");
@@ -10,16 +9,15 @@ const port = 3000;
 app.use(cors({ optionsSuccessStatus: 200 }));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => res.sendFile(__dirname + "/views/index.html"));
-app.use(express.static(__dirname + "/public"));
+app.get('/', (req, res) => res.send('Read README to use api.'));
 
 let listUrl = [
   {
-    original_url: "https://www.freecodecamp.org",
+    original_url: "https://www.google.org",
     short_url: 1
   },
   {
-    original_url: "https://www.google.com",
+    original_url: "https://www.facebook.com",
     short_url: 2
   }
 ];
