@@ -16,3 +16,6 @@ npm run start
   * `[]/api/shorturl/[short_url]` : When you visit `/api/shorturl/<short_url>`, you will be redirected to the original URL.
 * POST
   * `[]/api/shorturl/new` : You can POST a `url` to `/api/shorturl/new` and get a JSON response with `original_url` and `short_url` properties. Here's an example: { original_url : 'https://google.com', short_url : 1}
+
+### Demo
+[Link Demo](https://shortener.hadinhtu97.repl.co/)
